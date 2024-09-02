@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(assets/img/capa\ -\ banda.png);
+    background-size: 1550px 750px;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    min-height: 100vh;
+    width: min(100vw, 360px);
+    margin: auto;
+    padding: 0px 15px;
+}
+
+/*Início perfil*/
+.profile{
+    text-align: center;
+    padding: 25px;
+    font-size: 25px;
+}
+.profile img{
+    width: 200px;
+}
+.profile p{
+    font-weight: 550;
+    margin-top: 10px;
+    line-height: 10px;
+}
+/*Fim perfil*/
+
+/*Início links*/
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px 0;
+}
+.img-icon img{
+    width: 30px;
+    margin-right: 30px;
+}
+
+ul li a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    
+
+    color: #fff;
+    background: rgba(0, 0, 0, 0.734);
+    border-radius: 25px;
+    border: 2px solid rgba(0, 0, 0, 0.44);
+
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    transition: background 1s ;
+}
+
+ul li a:hover{
+    background: rgba(0, 0, 0, 0.575);
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(100vh);
+    text-decoration: underline;
+}
+/*Fim links*/
