@@ -5,7 +5,7 @@
 }
 
 body{
-    background: url(assets/img/Background\ -\ Full.png) no-repeat center/cover;
+    background: url(assets/img/M2/capa-full.jpg)  top center;
     font-family: Arial, Helvetica, sans-serif;
 }
 .container{
@@ -19,7 +19,8 @@ body{
 }
 
 .imga img{
-    width: 120px;
+    width: 140px;
+    filter: invert(100%);
 }
 
 /*Início perfil*/
@@ -32,9 +33,11 @@ body{
     width: 170px;
 }
 .profile p{
+    color: #fff;
+    font-size: 2rem;
     font-weight: 500;
     line-height: 24px;
-    margin-top: 8px;
+    margin-top: 16px;
 }
 /*Fim perfil*/
 
@@ -60,7 +63,7 @@ ul li a{
     
 
     color: #fff;
-    background: rgba(0, 0, 0, 0.734);
+    background: rgba(0, 0, 0, 0.911);
     border-radius: 25px;
     border: 2px solid rgba(0, 0, 0, 0.44);
 
@@ -69,7 +72,7 @@ ul li a{
     transition: background 1s ;
 
     font-weight: 500;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 ul li a:hover{
@@ -81,11 +84,29 @@ ul li a:hover{
 /*Fim links*/
 @media only screen and (max-width: 767px){
     body{
-        background: url(assets/img/Background\ -\ 767px.jpg) no-repeat top center/cover;
+        background: url(assets/img/M2/capa-T-C.jpg) no-repeat top center/cover;
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 1040px){
     body{
-        background: url(assets/img/Background\ -\ 1024px.jpg) no-repeat top center/cover;
+        background: url(assets/img/M2/capa-T-C.jpg) center/cover;
+    }
+    .profile p{
+        font-size: 4rem;
+        margin: 45px 0;
+    }
+    .imga img{
+        width: 180px;
+    }
+    ul{
+        gap: 1.5rem;
+    }
+    ul li a{
+        font-size: 3rem;
+        padding: 1rem 7rem;
+    }
+    .img-icon img{
+        width: 35px;
+        margin-right: 25px;
     }
 }
