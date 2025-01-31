@@ -5,8 +5,15 @@
 }
 
 body{
-    background: url(assets/img/M2/capa-full.jpg)  top center;
+    background: url(assets/img/m3/2.png) ; 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family: Arial, Helvetica, sans-serif;
+}
+.back-All{
+    background-color: #0000009f;
+    display: flex;
 }
 .container{
     display: flex;
@@ -26,20 +33,30 @@ body{
 /*Início perfil*/
 .profile{
     text-align: center;
-    padding: 18px 24px;
     font-size: 25px;
 }
 .profile img{
-    width: 170px;
+    width: 250px;
 }
 .profile p{
     color: #fff;
     font-size: 2rem;
     font-weight: 500;
     line-height: 24px;
-    margin-top: 16px;
+    margin: 16px 0 ;
 }
 /*Fim perfil*/
+
+.icons{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    img{
+        filter: invert();
+        width: 50px;
+    }
+}
 
 /*Início links*/
 ul{
@@ -59,13 +76,14 @@ ul li a{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 12px 95px;
+    padding: 0.8rem 1rem;
+
     
 
-    color: #fff;
-    background: rgba(0, 0, 0, 0.911);
+    color: #000;
+    background: rgba(255, 255, 255, 0.911);
     border-radius: 25px;
-    border: 2px solid rgba(0, 0, 0, 0.44);
+    border: 2px solid rgba(255, 255, 255, 0.44);
 
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
@@ -76,7 +94,7 @@ ul li a{
 }
 
 ul li a:hover{
-    background: rgba(0, 0, 0, 0.575);
+    background: rgba(255, 255, 255, 0.575);
     backdrop-filter: blur(1.5px);
     -webkit-backdrop-filter: blur(100vh);
     text-decoration: underline;
@@ -84,12 +102,18 @@ ul li a:hover{
 /*Fim links*/
 @media only screen and (max-width: 767px){
     body{
-        background: url(assets/img/M2/capa-T-C.jpg) no-repeat top center/cover;
+        background: url(assets/img/m3/2.png) no-repeat top center/cover;
+    }
+    iframe{
+        width: 100%;
+        height: 200px;
+        justify-content: center;
+        align-items: center;
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 1040px){
     body{
-        background: url(assets/img/M2/capa-T-C.jpg) center/cover;
+        background: url(assets/img/m3/2.png) center/cover;
     }
     .profile p{
         font-size: 4rem;
@@ -102,8 +126,7 @@ ul li a:hover{
         gap: 1.5rem;
     }
     ul li a{
-        font-size: 3rem;
-        padding: 1rem 7rem;
+        padding: 1rem;
     }
     .img-icon img{
         width: 35px;
